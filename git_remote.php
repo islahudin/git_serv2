@@ -21,6 +21,7 @@ if ($secret && $signature) {
 $output = shell_exec('git config --global --add safe.directory public_html/gitremote.qordinate.com/git_serv2 && cd public_html/gitremote.qordinate.com/git_serv2 && git pull origin main 2>&1');
 // $output = shell_exec('cd /www/wwwroot/merantiapi.qordinate.com/man_serv && git pull origin main 2>&1');
 echo "<pre>$output</pre>";
+file_put_contents('/home/n1577716/public_html/logs/user_check.log', $output);
 echo json_encode(['status' => 'success', 'message' => 'Git pull executed']);
 
 
