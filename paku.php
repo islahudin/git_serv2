@@ -12,7 +12,7 @@ if (function_exists('shell_exec')) {
 // file_put_contents('/home/n1577716/public_html/logs/user_check.log', $output);
 
 $output = "This is a test log content.";
-$logPath = '/home/username/public_html/logs/user_check.log';
+$logPath = '/home/n1577716/public_html/logs/user_check.log';
 
 // Tulis ke file
 $result = file_put_contents($logPath, $output);
