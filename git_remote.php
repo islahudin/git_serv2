@@ -18,7 +18,7 @@ if ($secret && $signature) {
 
 // Jalankan perintah Git
 // $output = shell_exec('git config --global --add safe.directory /www/wwwroot/merantiapi.qordinate.com/tes_serv && cd /www/wwwroot/merantiapi.qordinate.com/tes_serv && git pull origin main 2>&1');
-$output = shell_exec('git config --global --add safe.directory /public_html/gitremote.qordinate.com/git_serv2 && cd /public_html/gitremote.qordinate.com/git_serv2 && git pull origin main 2>&1');
+$output = shell_exec('git config --global --add safe.directory public_html/gitremote.qordinate.com/git_serv2 && cd public_html/gitremote.qordinate.com/git_serv2 && git pull origin main 2>&1');
 // $output = shell_exec('cd /www/wwwroot/merantiapi.qordinate.com/man_serv && git pull origin main 2>&1');
 echo "<pre>$output</pre>";
 echo json_encode(['status' => 'success', 'message' => 'Git pull executed']);
